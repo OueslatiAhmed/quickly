@@ -81,14 +81,20 @@ function prfx_meta_callback( $post ) {
 		<input type="text" name="meta-Etat" id="meta-Etat" value="<?php if ( isset ( $prfx_stored_meta['meta-Etat'] ) ) echo $prfx_stored_meta['meta-Etat'][0]; ?>" />
 			<br>
 		<label for="meta-dateE" class="prfx-row-title"><?php _e( 'Date de la réclamation', 'prfx-textdomain' )?></label>
-		<input  type="text" name="meta-dateE" id="meta-dateE" value="<?php if ( isset ( $prfx_stored_meta['meta-dateE'] ) ) echo $prfx_stored_meta['meta-dateE'][0]; ?>" />
+		<input  type="date" name="meta-dateE" id="meta-dateE" value="<?php if ( isset ( $prfx_stored_meta['meta-dateE'] ) ) echo $prfx_stored_meta['meta-dateE'][0]; ?>" />
          <br>	
 	<label for="meta-Agent" class="prfx-row-title"><?php _e( 'Agent responsable', 'prfx-textdomain' )?></label>
 		<input type="text" name="meta-Agent" id="meta-Agent" value="<?php if ( isset ( $prfx_stored_meta['meta-Agent'] ) ) echo $prfx_stored_meta['meta-Agent'][0]; ?>" />
 			<br>
 			<label for="meta-date" class="prfx-row-title"><?php _e( 'Date de l’intervention', 'prfx-textdomain' )?></label>
-		<input type="text" name="meta-date" id="meta-date" value="<?php if ( isset ( $prfx_stored_meta['meta-date'] ) ) echo $prfx_stored_meta['meta-date'][0]; ?>" />
+		<input type="date" name="meta-date" id="meta-date" value="<?php if ( isset ( $prfx_stored_meta['meta-date'] ) ) echo $prfx_stored_meta['meta-date'][0]; ?>" />
 			<br>
+			<p>
+<label for="your_fields[text]">Input Text</label>
+<br>
+<input type="text" name="your_fields[text]" id="your_fields[text]" class="regular-text"
+value="<?php echo $meta['text']; ?>" >
+</p>
 	</p>
 	
 
